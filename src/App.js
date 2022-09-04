@@ -4,6 +4,8 @@ import Hero from "./components/Hero"
 import Card from "./components/Card"
 import data from "./data"
 
+
+
 export default function App() {
     const cards = data.map(item => {
         return (
@@ -15,6 +17,7 @@ export default function App() {
                 location={item.location}
                 title={item.title}
                 price={item.price}
+                openSpots={item.openSpots}
             />
         )
     })        
