@@ -8,9 +8,6 @@ export default function Card(props) {
         badgeText = "ONLINE"
     }
     
-    /*
-    Challenge: Fix our component! 😱
-    */
     
     return (
         <div className="card">
