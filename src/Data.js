@@ -1,4 +1,4 @@
-const array = [
+const data = [
     {
         id: 1,
         title: "Learn Wedding Photography",

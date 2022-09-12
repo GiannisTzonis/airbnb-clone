@@ -1,8 +1,8 @@
 import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
-import Card from "./components/Card"
-import Data from "./Data"
+// import Card from "./components/Card"
+import data from "./data"
 
 
 export default function App() {
@@ -11,8 +11,8 @@ export default function App() {
         return (
             <Card 
                 img={item.coverImg}
-                rating={item.rating}
-                reviewCount={item.reviewCount}
+                rating={item.stats.rating}
+                reviewCount={item.stats.reviewCount}
                 location={item.location}
                 title={item.title}
                 price={item.price}
@@ -23,14 +23,7 @@ export default function App() {
     return (
         <div>
             <Navbar />
-            <Card
-                img="contact.jpg"
-                rating="5.0"
-                reviewCount={6}
-                location="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
-            />
+            {cards}
         </div>
     )
 }
