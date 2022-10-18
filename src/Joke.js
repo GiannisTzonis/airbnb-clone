@@ -1,7 +1,12 @@
 import React from "react"
 
-export default function Joke() {
+export default function Joke(props) {
+    console.log(props)
     return (
-        <h1>Check</h1>
+        <div>
+            <h3>{props.setup}</h3>
+            <p>{props.punchline}</p>
+            <hr />
+        </div>
     )
 }
